@@ -1,0 +1,67 @@
+{
+  "Compensation and Payroll Guide.pdf": {
+    "policy_id": "HR-COMP-001",
+    "title": "Compensation and Payroll Guide",
+    "version": "1.0",
+    "status": "approved",
+    "effective_date": "2026-01-01",
+    "department": "Human Resources"
+  },
+  "Employee Handbook 2024.pdf": {
+    "policy_id": "HR-HAND-001",
+    "title": "Employee Handbook 2024",
+    "version": "1.0",
+    "status": "approved",
+    "effective_date": "2026-01-01",
+    "department": "Human Resources"
+  },
+  "Exit and Resignation Procedure.pdf": {
+    "policy_id": "HR-EXIT-001",
+    "title": "Exit and Resignation Procedure",
+    "version": "1.0",
+    "status": "approved",
+    "effective_date": "2026-01-01",
+    "department": "Human Resources"
+  },
+  "Grievance_and_Escalation_Procedure.pdf": {
+    "policy_id": "HR-GRIEV-001",
+    "title": "Grievance and Escalation Procedure",
+    "version": "1.0",
+    "status": "approved",
+    "effective_date": "2026-01-01",
+    "department": "Human Resources"
+  },
+  "Onboarding_and_Joining_Guide.pdf": {
+    "policy_id": "HR-ONBD-001",
+    "title": "Onboarding and Joining Guide",
+    "version": "1.0",
+    "status": "approved",
+    "effective_date": "2026-01-01",
+    "department": "Human Resources"
+  },
+  "Performance Review and Appraisal Policy.pdf": {
+    "policy_id": "HR-PERF-001",
+    "title": "Performance Review and Appraisal Policy",
+    "version": "1.0",
+    "status": "approved",
+    "effective_date": "2026-01-01",
+    "department": "Human Resources"
+  },
+  "Remote and Hybrid Work Policy.pdf": {
+    "policy_id": "HR-REMOTE-001",
+    "title": "Remote and Hybrid Work Policy",
+    "version": "1.0",
+    "status": "approved",
+    "effective_date": "2026-01-01",
+    "department": "Human Resources"
+  },
+  "Travel and Expense Reimbursement .pdf": {
+    "policy_id": "HR-TRAVEL-001",
+    "title": "Travel and Expense Reimbursement",
+    "version": "1.0",
+    "status": "approved",
+    "effective_date": "2026-01-01",
+    "department": "Human Resources"
+  }
+}
+
