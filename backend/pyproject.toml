@@ -1,0 +1,39 @@
+[build-system]
+requires = ["setuptools>=69", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "hr-enterprise-policy-assistant"
+version = "0.1.0"
+description = "AI-powered HR policy assistant using FastAPI and a corrective RAG workflow."
+readme = { text = "HR Enterprise Policy Assistant backend", content-type = "text/plain" }
+requires-python = ">=3.12"
+dependencies = [
+    "fastapi==0.115.5",
+    "uvicorn[standard]==0.32.1",
+    "python-dotenv==1.0.1",
+    "pydantic==2.10.3",
+    "pydantic-settings==2.7.0",
+    "langchain==0.3.14",
+    "langchain-core==0.3.29",
+    "langchain-community==0.3.14",
+    "langchain-text-splitters==0.3.4",
+    "langchain-huggingface==0.1.2",
+    "langchain-pinecone==0.2.0",
+    "langchain-groq==0.2.2",
+    "langgraph==0.2.60",
+    "pinecone==5.4.2",
+    "sentence-transformers==3.3.1",
+    "pypdf==5.1.0",
+    "python-multipart==0.0.20",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest==8.3.4",
+    "httpx==0.28.1",
+]
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["app*"]
