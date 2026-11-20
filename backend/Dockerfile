@@ -15,13 +15,12 @@ RUN apt-get update && apt-get install -y --no-install-recommends curl \
 # Install dependencies first to improve Docker layer caching.
 COPY requirements.txt pyproject.toml ./
 RUN python -m pip install --upgrade pip \
-    && pip install -r requirements.txt \
-    && pip install --no-deps .
+    && pip install -r requirements.txt
 
-# Copy the application after dependencies have been installed.
+# Copy source, then install the local Python project metadata/package.
 COPY . .
-
-RUN mkdir -p logs data/hr_policies \
+RUN pip install --no-deps . \
+    && mkdir -p logs data/hr_policies \
     && addgroup --system appgroup \
     && adduser --system --ingroup appgroup appuser \
     && chown -R appuser:appgroup /app
