@@ -44,7 +44,7 @@ Rules:
 - If should_abstain is false, a generic refusal is not correct.
 - Do not reward confident wording without factual support.
 Return ONLY valid JSON with keys:
-{"answer_correct": true/false, "reason": "short explanation"}
+{{"answer_correct": true/false, "reason": "short explanation"}}
 
 Question: {question}
 Reference answer: {reference_answer}
