@@ -5,7 +5,7 @@ irrelevant, verifies answer grounding, and synthesizes the final response.
 """
 
 import logging
-from typing import TypedDict, List
+from typing import TypedDict, List, Optional
 
 from langchain_groq import ChatGroq
 from langchain_core.documents import Document
@@ -31,7 +31,7 @@ class HRState(TypedDict):
     documents: List[Document]
     context: str
     answer: str
-    grounded: bool
+    grounded: Optional[bool]
     verify_grounding: bool
     retry_count: int
     status: str
