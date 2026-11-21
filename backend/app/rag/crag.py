@@ -5,7 +5,7 @@ irrelevant, verifies answer grounding, and synthesizes the final response.
 """
 
 import logging
-from typing import TypedDict, List
+from typing import TypedDict, List, Optional
 
 from langchain_groq import ChatGroq
 from langchain_core.documents import Document
@@ -31,7 +31,8 @@ class HRState(TypedDict):
     documents: List[Document]
     context: str
     answer: str
-    grounded: bool
+    grounded: Optional[bool]
+    verify_grounding: bool
     retry_count: int
     status: str
 
@@ -198,6 +199,13 @@ def build_hr_crag_graph(
             return {
                 "grounded": False,
                 "status": "insufficient_evidence"
+            }
+
+        if not state.get("verify_grounding", True):
+            logger.info("Grounding verification disabled for this request.")
+            return {
+                "grounded": None,
+                "status": "verification_skipped"
             }
 
         response = llm.invoke(

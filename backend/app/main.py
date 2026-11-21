@@ -97,7 +97,8 @@ async def chat(payload: ChatRequest):
     try:
         result = answer_question(
             app.state.crag,
-            question
+            question,
+            verify_grounding=payload.verify_grounding
         )
     except Exception as exc:
         logger.exception("CRAG pipeline error")
@@ -127,6 +128,6 @@ async def chat(payload: ChatRequest):
     return ChatResponse(
         response=result["answer"],
         sources=sources,
-        grounded=result.get("grounded", False),
+        grounded=result.get("grounded"),
         status=result.get("status", "answered")
     )

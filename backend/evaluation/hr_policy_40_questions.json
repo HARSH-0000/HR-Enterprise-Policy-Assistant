@@ -1,0 +1,162 @@
+[
+  {
+    "id": 1,
+    "question": "When is salary credited if the last day of the month falls on a weekend or public holiday?"
+  },
+  {
+    "id": 2,
+    "question": "What is the difference between an exempt employee and a non-exempt employee?"
+  },
+  {
+    "id": 3,
+    "question": "Alex earns a base salary of $120,000, has a 15% target bonus, a company performance factor of 1.1, and an individual performance factor of 1.25. What is his annual bonus?"
+  },
+  {
+    "id": 4,
+    "question": "What deductions are mandatory, and what deductions are voluntary?"
+  },
+  {
+    "id": 5,
+    "question": "How can an employee verify or correct personal, bank, or tax information for payroll?"
+  },
+  {
+    "id": 6,
+    "question": "What is the standard probationary period for a new employee?"
+  },
+  {
+    "id": 7,
+    "question": "What is the overtime pay rate for a non-exempt employee who works more than 40 hours in a workweek?"
+  },
+  {
+    "id": 8,
+    "question": "How should an employee report suspected harassment, bullying, or retaliation?"
+  },
+  {
+    "id": 9,
+    "question": "What items are considered acceptable examples of business-casual attire?"
+  },
+  {
+    "id": 10,
+    "question": "How must a potential conflict of interest involving a family member or supplier be handled?"
+  },
+  {
+    "id": 11,
+    "question": "What are the minimum notice periods for non-managerial employees, managers, and executives?"
+  },
+  {
+    "id": 12,
+    "question": "What must a formal resignation letter include?"
+  },
+  {
+    "id": 13,
+    "question": "What is the difference between Payment in Lieu of Notice and garden leave?"
+  },
+  {
+    "id": 14,
+    "question": "Which company property must be returned before or on an employee's last day?"
+  },
+  {
+    "id": 15,
+    "question": "Is unused vacation paid out at separation, and is unused sick leave also paid out?"
+  },
+  {
+    "id": 16,
+    "question": "What are the four core principles of the grievance procedure?"
+  },
+  {
+    "id": 17,
+    "question": "When should an employee initiate a formal grievance?"
+  },
+  {
+    "id": 18,
+    "question": "What are the acknowledgment, investigation, meeting, and written-decision targets for a formal grievance?"
+  },
+  {
+    "id": 19,
+    "question": "Within how many working days must an appeal be submitted, and what grounds may it use?"
+  },
+  {
+    "id": 20,
+    "question": "What should an employee who has a grievance about their direct manager do?"
+  },
+  {
+    "id": 21,
+    "question": "How soon should a new hire complete background-verification forms after receiving the vendor link?"
+  },
+  {
+    "id": 22,
+    "question": "What time should an in-office new employee report on their first day?"
+  },
+  {
+    "id": 23,
+    "question": "What is the role of an onboarding buddy?"
+  },
+  {
+    "id": 24,
+    "question": "How is probation reviewed during the first 90 days?"
+  },
+  {
+    "id": 25,
+    "question": "By when must a new employee complete benefits enrollment?"
+  },
+  {
+    "id": 26,
+    "question": "What does SMART mean in the goal-setting framework?"
+  },
+  {
+    "id": 27,
+    "question": "How many key goals should an employee normally set for the year?"
+  },
+  {
+    "id": 28,
+    "question": "What are the five year-end performance ratings and their numerical scores?"
+  },
+  {
+    "id": 29,
+    "question": "What is the purpose of calibration meetings?"
+  },
+  {
+    "id": 30,
+    "question": "What is a PIP and what outcomes are possible at the end?"
+  },
+  {
+    "id": 31,
+    "question": "What is the standard in-office pattern for a hybrid employee?"
+  },
+  {
+    "id": 32,
+    "question": "What are anchor days?"
+  },
+  {
+    "id": 33,
+    "question": "What equipment does the company provide to hybrid and remote employees?"
+  },
+  {
+    "id": 34,
+    "question": "What approval and conditions apply to working from a location outside the employee's primary remote location?"
+  },
+  {
+    "id": 35,
+    "question": "What network and security requirements apply to remote work?"
+  },
+  {
+    "id": 36,
+    "question": "What authorization is required before a business trip can be booked?"
+  },
+  {
+    "id": 37,
+    "question": "How many days in advance should a flight be booked, and what is the rule for last-minute booking?"
+  },
+  {
+    "id": 38,
+    "question": "What class of air travel is permitted for flights of 8 hours or more?"
+  },
+  {
+    "id": 39,
+    "question": "What are the meal reimbursement limits for individual employee meals while traveling?"
+  },
+  {
+    "id": 40,
+    "question": "Within how many days must an expense report be submitted, and what is the reimbursement timeline after final approval?"
+  }
+]
