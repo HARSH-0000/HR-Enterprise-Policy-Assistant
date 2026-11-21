@@ -38,13 +38,15 @@ class HRState(TypedDict):
 
 def build_hr_crag_graph(
     retriever,
-    reranker=None
+    reranker=None,
+    enable_relevance_grading: bool = True
 ):
     """Build and compile the CRAG LangGraph workflow.
 
     Args:
         retriever: A LangChain retriever for HR policy documents.
         reranker: Optional callable(question, documents, top_k) for reranking.
+        enable_relevance_grading: When False, bypass grading and query rewriting.
 
     Returns:
         A compiled LangGraph that accepts HRState and produces an answer.
@@ -255,16 +257,19 @@ def build_hr_crag_graph(
 
     workflow.add_edge(START, "retrieve")
 
-    workflow.add_edge("retrieve", "grade")
-
-    workflow.add_conditional_edges(
-        "grade",
-        route_after_grading,
-        {
-            "generate": "generate",
-            "rewrite": "rewrite"
-        }
-    )
+    if enable_relevance_grading:
+        workflow.add_edge("retrieve", "grade")
+        workflow.add_conditional_edges(
+            "grade",
+            route_after_grading,
+            {
+                "generate": "generate",
+                "rewrite": "rewrite"
+            }
+        )
+    else:
+        # Ablation mode: skip relevance grading and query rewriting.
+        workflow.add_edge("retrieve", "generate")
 
     workflow.add_edge("rewrite", "retrieve")
 
