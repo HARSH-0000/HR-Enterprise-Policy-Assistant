@@ -14,6 +14,8 @@ class ChatRequest(BaseModel):
         max_length=4000
     )
     chat_history: Optional[List[Message]] = None
+    # Defaults to True to preserve normal assistant behaviour.
+    verify_grounding: bool = True
 
 
 class Source(BaseModel):
