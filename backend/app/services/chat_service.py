@@ -8,7 +8,8 @@ logger = logging.getLogger(__name__)
 
 def answer_question(
     crag_graph,
-    question: str
+    question: str,
+    verify_grounding: bool = True
 ) -> Dict[str, Any]:
     """
     Invoke the CRAG workflow to answer HR policy questions.
@@ -33,6 +34,7 @@ def answer_question(
         "context": "",
         "answer": "",
         "grounded": False,
+        "verify_grounding": verify_grounding,
         "retry_count": 0,
         "status": "processing"
     }
@@ -66,7 +68,7 @@ def answer_question(
     return {
         "answer": answer,
         "sources": sources,
-        "grounded": result.get("grounded", False),
+        "grounded": result.get("grounded"),
         "status": result.get("status", "answered"),
     }
 
