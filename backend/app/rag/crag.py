@@ -32,6 +32,7 @@ class HRState(TypedDict):
     context: str
     answer: str
     grounded: bool
+    verify_grounding: bool
     retry_count: int
     status: str
 
@@ -196,6 +197,13 @@ def build_hr_crag_graph(
             return {
                 "grounded": False,
                 "status": "insufficient_evidence"
+            }
+
+        if not state.get("verify_grounding", True):
+            logger.info("Grounding verification disabled for this request.")
+            return {
+                "grounded": None,
+                "status": "verification_skipped"
             }
 
         response = llm.invoke(
